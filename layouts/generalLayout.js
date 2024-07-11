@@ -1,9 +1,14 @@
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Newsletter_Signup from "@/components/Newsletter_Signup";
+
 const GeneralLayout = ({children}) => {
   return (
     <>
-      <p>Layout Top</p>
+      <Header />
       {children}
-      <p>Layout Bottom</p>
+      <Newsletter_Signup />
+      <Footer />
     </>
   );
 }
