@@ -30,3 +30,36 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* End of CSS Reset */
+
+:root {
+  /* Primary Colors */
+  --primary: #0B301A;
+  --primary-light: #CFE9D6;
+  --primary-lighter: #DEE6C2;
+  --accent: #DEFF85;
+  --container: #225100;
+  --container-text: #DAE9C1;
+  --text-bold: #8CC63F;
+  --button-bg: #4C8800;
+  --background-muted: #162100;
+
+  /* Background Colors */
+  --bg-light: #F4F8EC;
+  --bg-white: #FEFEFE;
+
+  /* Text Colors */
+  --text-dark: #1D1D1D;
+  --text-medium-dark: #1D1B20;
+  --text-grey-dark: #49454F;
+  --text-grey: #606060;
+  --text-grey-light: #404040;
+  --border-grey: #79747E;
+
+  /* Testimonial Colors */
+  --testimonial-bg: #FBFDF8;
+  --testimonial-shadow: #B4D288;
+}
+
+body {
+  background-color: var(--primary);
+}

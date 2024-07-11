@@ -1,0 +1,25 @@
+.container {
+  padding: 1.25em 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburgerButton {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  max-width: 38px;
+}
+
+.hamburgerButton svg {
+  color: var(--accent);
+}
+
+.hamburgerButton:hover, .hamburgerButton:focus {
+  transform: scale(.95);
+}
+.hamburgerButton:hover svg, .hamburgerButton:focus svg{
+  color: var(--text-bold);
+}
