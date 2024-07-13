@@ -46,7 +46,7 @@
   border-radius: 12px;
   padding: .75em;
   background-color: var(--primary);
-  color: var(--primary-light);
+  color: var(--bg-light);
 }
 
 .submitBtn:hover, .submitBtn:focus {
