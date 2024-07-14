@@ -90,7 +90,7 @@ const Footer = () => {
         </div>
 
         <div className={styles.mainFooterEnd}>
-          <p>123, Anywhere road, Nowhere Street, Bermuda Triangle Junction</p>
+          <p>University of Ibadan, Oyo Road, Ibadan, Nigeria</p>
           <a href="mailto:info@ourcommonpot.org">info@ourcommonpot.org</a>
           <a href="tel:+2348154689567">+234 815 468 9567</a>
         </div>

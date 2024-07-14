@@ -1,0 +1,49 @@
+.container {
+  display: block;
+  text-decoration: none;
+  color: var(--text-dark);
+  text-align: left;
+  max-width: 450px;
+}
+
+.articleImage {
+  padding-bottom: 1.5em;
+  border-radius: 12px;
+}
+
+.articleImage img {
+  border-radius: 12px;
+}
+
+.articleTitles {
+  padding-bottom: 1.5em;
+}
+.articleTitles p{
+  padding-top: .75em;
+}
+
+.articleAuthor {
+  display: flex;
+  align-items: center;
+  column-gap: .75em;
+}
+
+.articleAuthorAvatar {
+  width: 15%;
+  max-width: 45px;
+}
+.articleAuthorAvatar img {
+  object-fit: contain;
+}
+
+.articleAuthor > p {
+  color: var(--text-grey);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.articleInfo {
+  color: var(--text-grey);
+  display: flex;
+  column-gap: .75em;
+}

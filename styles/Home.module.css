@@ -1,8 +1,363 @@
 .main {
+  background-color: var(--bg-light);
+}
+
+.firstLayout {
+  background-color: var(--primary);
+}
+
+.heroContainer {
+  padding: .5em 1.5em 2em;
+}
+
+.heroTop {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  text-align: center;
+  color: var(--primary-lighter);
+}
+
+.topCtaButton {
+  display: block;
+  width: 90%;
+  max-width: 500px;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  padding: .45em .35em;
+  border: 1px solid var(--primary-light);
+  color: var(--primary-light);
+  border-radius: 32px;
+  font-size: .9rem;
+  margin: 0 auto 3em;
+}
+.topCtaButton > span {
+  display: none;
+}
+.topCtaButton:hover, .topCtaButton:focus {
+  color: var(--accent);
+}
+
+
+.heroWords h1 {
+  color: var(--primary-light);
+  font-size: 2rem;
+  margin-bottom: .5em;
+}
+
+.heroWords h1 > span {
+  color: var(--text-bold);
+}
+
+.heroWords > p {
+  margin-bottom: 1.5em;
+}
+
+.heroButtons {
+  display: flex;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  justify-content: space-between;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.heroButtons > button {
+  cursor: pointer;
+  width: 45%;
+  padding: 1em;
+  border-radius: 12px;
+  border: 1px solid transparent;
+}
+.heroButtons > button:hover,
+.heroButtons > button:focus {
+  transform: scale(.98);
+  opacity: 80%;
+}
+
+.heroButton1 {
+  background-color: var(--container);
+  color: var(--container-text);
+}
+.heroButtons > .heroButton2 {
+  background-color: transparent;
+  border-color: var(--container-text);
+  color: var(--container-text);
+}
+
+.mobileHeroImage {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.mobileHeroImage img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.sponsorContainer {
+  display: grid;
+  justify-content: space-between;
+  gap: 1.5em .5em;
+  grid-template-areas: "sponsor1 sponsor2" 
+                       "sponsor3 sponsor4" 
+                       "sponsor5 sponsor5";
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.sponsorContainer img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.sponsorLogo {
+  max-width: 160px;
+  margin: 0 auto;
+}
+.sponsorLogo:first-of-type {
+  grid-area: sponsor1;
+}
+.sponsorLogo:nth-of-type(2) {
+  grid-area: sponsor2;
+}
+.sponsorLogo:nth-of-type(3) {
+  grid-area: sponsor3;
+}
+.sponsorLogo:nth-of-type(4) {
+  grid-area: sponsor4;
+}
+
+.sponsorLogo:last-of-type {
+  grid-area: sponsor5;
+}
+
+.secondLayout {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 1.5em;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3em;
+}
+
+.secondLayoutArticle {
+  padding-bottom: 2em;
+}
+
+.secondLayoutArticle h2 {
+  color: var(--text-dark);
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+.secondLayoutArticle p {
+  color: var(--text-grey);
+  margin-bottom: 2em;
+}
+
+.heroButtons > .secondLayoutBtn1 {
+  background-color: var(--container);
+  color: var(--container-text);
+  border-width: 1.8px;
+}
+.heroButtons > .secondLayoutBtn2 {
+  background-color: transparent;
+  border-color: var(--primary);
+  color: var(--primary);
+  border-width: 1.8px;
+}
+
+.collaborationImage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.collaborationImage img{
+  border-radius: 12px;
+}
+
+.thirdLayout {
+  padding: .5em 1em;
+  text-align: center;
+}
+.thirdLayoutArticle {
+  padding-bottom: 3em;
+}
+.thirdLayoutArticle h2{
+  color: var(--text-dark);
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+.thirdLayoutArticle p {
+  color: var(--text-grey);
+  margin-bottom: 2em;
+}
+
+.infoLayout {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5em;
+  margin-bottom: 4em;
+}
+
+.infoContainer {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.infoContainer p {
+  padding-top: .3em;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.infoImage img {
+  margin: 0 auto;
+}
+
+.fourthLayout {
+  padding: .5em 1em;
+}
+
+.bigScreenArticle {
+  display: none;
+}
+
+.infographicImage {
+  max-width: 400px;
+  margin: 0 auto 1em;
+}
+
+.infographicImage img{
+  object-fit: contain;
+}
+
+.fifthLayout {
+  position: relative;
+  width: 90%;
+  max-width: 1500px;
+  margin: 1em auto 4em;
+  padding: 3em 1em;
+  border-radius: 12px;
+  background-color: var(--background-muted);
+  background-image: url("../public/images/give_food.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.fifthLayout h2 {
+  color: var(--primary-light);
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.fifthLayout p {
+  color: var(--primary-lighter);
+  margin-bottom: 2em;
+}
+
+.inviteContainer {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 4;
+}
+
+.blurredFix {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 3;
+  border-radius: 12px;
+}
+
+.sponsorButton1 {
+  background-color: var(--container-text);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.heroButtons > .sponsorButton2 {
+  background-color: transparent;
+  color: var(--primary-light);
+  font-weight: 600;
+  border-color: var(--primary-light);
+}
+
+.sixthLayout {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonialIntro {
+  padding: 0 1em;
+}
+
+.testimonialIntro h2 {
+  color: var(--text-dark);
+  font-size: 1.5rem;
+  margin-bottom: .5em;
+}
+
+.testimonialIntro p {
+  color: var(--text-grey);
+  margin-bottom: 2em;
+}
+
+.testimonialsContainer {
+  padding: .5em 1em 2em;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  display: flex;
+  align-items: baseline;
+  column-gap: 1em;
+}
+.testimonialsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonialsContainer > div {
+  min-width: 340px;
+}
+
+.testimonialVideoContainer {
+  width: 90%;
+  margin: 0 auto 5em;
+}
+.testimonialVideoContainer a {
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+.testimonialVideoContainer a img {
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.lastLayout {
+  padding: 0 1em;
+  text-align: center;
+}
+
+.lastLayout > h2 {
+  color: var(--text-dark);
+  font-size: 1.5rem;
+  margin-bottom: .5em;
+}
+
+.lastLayout > p {
+  color: var(--text-grey);
+  margin-bottom: 2em;
+}
+
+.blogCutoutContainer {
+  padding: 0 .25em 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2.25em;
 }
