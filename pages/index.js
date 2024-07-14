@@ -16,6 +16,7 @@ import infographicsImage from "../public/images/benefits_infographic_mobile.svg"
 import testimonialVideoImage from "../public/images/testimonial_video.svg";
 import BlogCutout from "@/components/BlogCutout";
 import TestimonialSmall from "@/components/TestimonialSmall";
+import CtaButton from "@/components/CtaButton";
 
 
 const testimonials = [
@@ -67,12 +68,7 @@ export default function Home() {
           <div className={styles.heroContainer}>
             <div className={styles.heroTop}>
               <div>
-                <button className={styles.topCtaButton}>
-                  Donate To Combat Hunger Among Students
-                  <span>
-                    Donate Now
-                  </span>
-                </button>
+                <CtaButton />
 
                 <div className={styles.heroWords}>
                   <h1>Welcome To <span>Our Common Pot</span></h1>

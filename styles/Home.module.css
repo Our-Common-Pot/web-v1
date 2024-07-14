@@ -17,28 +17,6 @@
   color: var(--primary-lighter);
 }
 
-.topCtaButton {
-  display: block;
-  width: 90%;
-  max-width: 500px;
-  cursor: pointer;
-  background-color: transparent;
-  outline: none;
-  padding: .45em .35em;
-  border: 1px solid var(--primary-light);
-  color: var(--primary-light);
-  border-radius: 32px;
-  font-size: .9rem;
-  margin: 0 auto 3em;
-}
-.topCtaButton > span {
-  display: none;
-}
-.topCtaButton:hover, .topCtaButton:focus {
-  color: var(--accent);
-}
-
-
 .heroWords h1 {
   color: var(--primary-light);
   font-size: 2rem;
