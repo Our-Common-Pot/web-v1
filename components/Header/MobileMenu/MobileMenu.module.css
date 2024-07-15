@@ -12,6 +12,10 @@ body:has(.layout) {
   padding-bottom: 2em;
 }
 
+.layout > div {
+  background-color: var(--bg-light);
+}
+
 .linkContainer {
   display: flex;
   flex-direction: column;

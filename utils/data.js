@@ -80,3 +80,18 @@ export const volunteerInfos = [
     details: "Yes, you can volunteer with friends or as part of a group! Volunteering with friends or as part of a group can be a fun and rewarding experience, allowing you to make a positive impact together. Simply indicate your preference to volunteer with friends or as part of a group when you apply, and we'll do our best to accommodate your request."
   }
 ]
+
+export const donationsInfos = [
+  {
+    title: "How can I make a donation to Our Common Pot?",
+    details: "You can make a donation to Our Common Pot through various methods, including online donations via our website, bank transfers, check payments, or in-person donations at designated locations. Visit our website or contact us directly for more information on how to donate."
+  },
+  {
+    title: "Can I specify how I want my donation to be used?",
+    details: "Yes, you can specify how you want your donation to be used. When making a donation, you can designate your contribution for specific programs or initiatives, such as meal distributions, pantry services, educational workshops, or general operating expenses. Your preferences will be honored to the best of our ability."
+  },
+  {
+    title: "How will I receive acknowledgment of my donation?",
+    details: "Upon making a donation to Our Common Pot, you will receive acknowledgment of your contribution in the form of a receipt or confirmation email. This acknowledgment will include details such as the amount of your donation, the date of your donation, and any specified designations for the use of your donation."
+  },
+]

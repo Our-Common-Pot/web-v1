@@ -5,9 +5,9 @@ import { FaInstagram, FaXTwitter } from "react-icons/fa6";
 import { FiFacebook, FiLinkedin } from "react-icons/fi";
 import Link from "next/link";
 
-const Footer = () => {
+const presentYear = new Date().getFullYear();
 
-  const presentYear = new Date().getFullYear();
+const Footer = () => {
 
   return (
     <footer className={styles.layout}>
@@ -65,24 +65,19 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href="/contact">
+              <Link href="/contact#beneficiaryApplication">
                 Become a Beneficiary
               </Link>
             </li>
           </ul>
           <ul className={styles.footerLinkList}>
             <li>
-              <Link href="/contact">
+              <Link href="/donate#donationsfaq">
                 FAQs
               </Link>
             </li>
             <li>
-              <Link href="/donate">
-                Testimonials
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact">
+              <Link href="/contact#volunteerApplication">
                 Volunteer
               </Link>
             </li>

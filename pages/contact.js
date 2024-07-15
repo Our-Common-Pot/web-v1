@@ -116,7 +116,7 @@ const Contact = () => {
           </div>
         </section>
 
-        <section className={styles.fourthLayout}>
+        <section className={styles.fourthLayout} id="beneficiaryApplication">
           <h2>Apply to be a Beneficiary</h2>
           <p>
             Our application process is simple and confidential. We prioritize your
@@ -232,7 +232,7 @@ const Contact = () => {
           </div>
         </section>
 
-        <section className={styles.sixthLayout}>
+        <section className={styles.sixthLayout} id="volunteerApplication">
           <h2>Join Our Team Of Volunteers</h2>
           <p>
             Ready to make a difference in your community? Become a volunteer with Our

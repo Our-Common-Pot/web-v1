@@ -1,0 +1,235 @@
+.donateLayout {
+  background-color: var(--bg-light);
+  color: var(--text-grey);
+}
+
+.secondLayout {
+  padding: 2em 1em 4em;
+  text-align: center;
+}
+
+.donateIntro {
+  padding: 0 .5em 4em;
+}
+.donateIntro > h2 {
+  color: var(--text-dark);
+  font-size: 1.5rem;
+  margin-bottom: .5em;
+}
+.donateIntro > p {
+  padding-bottom: 3em;
+}
+
+.donateBanksContainer {
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 2em;
+}
+
+.donateBank {
+  text-align: left;
+}
+
+.donateBankImage {
+  width: 30%;
+  padding-bottom: 1em;
+}
+.donateBankImage img {
+  object-fit: contain;
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.donateBank > p {
+  font-weight: 500;
+  padding-bottom: 1em;
+}
+.donateBank > button {
+  cursor: pointer;
+  width: 80%;
+  max-width: 120px;
+  border-radius: 12px;
+  padding: .85em 1em;
+  color: var(--primary);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  column-gap: 1em;
+  outline: none;
+  border: 1px solid var(--primary);
+}
+.donateBank > button:focus,
+.donateBank > button:hover {
+  transform: scale(.98);
+  opacity: 80%;
+}
+.donateIntroImage {
+  width: 100%;
+  height: 400px;
+}
+.donateIntroImage img{
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.thirdLayout {
+  padding: 0 1em 4em;
+}
+
+.impactIntro {
+  padding: 0 .5em 3em;
+}
+.impactIntro > h2 {
+  color: var(--text-dark);
+  font-size: 1.5rem;
+  margin-bottom: .5em;
+}
+.impactIntro > p {
+  font-weight: 500;
+  padding-bottom: 1.5em;
+}
+
+.impactListsContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: .8em;
+}
+
+.impactList {
+  display: flex;
+  align-items: flex-start;
+  column-gap: .85em;
+}
+.impactList > div {
+  width: 20%;
+  max-width: 20px;
+  transform: translateY(2px);
+}
+.impactList p {
+  font-size: .9rem;
+}
+
+.impactImage {
+  width: 100%;
+  height: 380px;
+}
+
+.impactImage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.fourthLayout {
+  padding: 0 1em 4em;
+}
+
+.founderIntro {
+  padding-bottom: 3em;
+}
+.starsContainer {
+  display: flex;
+  column-gap: .8em;
+  align-items: center;
+  padding-bottom: 2em;
+}
+
+.founderArticle {
+  color: var(--text-dark);
+}
+
+.founderArticle > h3{
+  font-size: 1.2rem;
+  margin-bottom: 1.2em;
+}
+
+.founderTitle > p:last-of-type {
+  font-size: .8rem;
+}
+
+.testimonialVideoContainer {
+  width: 100%;
+}
+
+.testimonialVideoContainer a {
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+.testimonialVideoContainer a img {
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+}
+
+.fifthLayout {
+  position: relative;
+  width: 90%;
+  max-width: 1500px;
+  margin: 1em auto 4em;
+  padding: 3em 1em;
+  border-radius: 12px;
+  background-color: var(--background-muted);
+  background-image: url("../public/images/contact_volunteer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.fifthLayout h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.fifthLayout p {
+  color: var(--primary-lighter);
+  margin-bottom: 2em;
+}
+
+.inviteContainer {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 4;
+}
+
+.blurredFix {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 3;
+  border-radius: 12px;
+}
+
+.donateButton1 {
+  background-color: var(--container);
+  color: var(--container-text);
+}
+.donateButton2 {
+  background-color: var(--container-text);
+  color: var(--primary);
+}
+
+.lastLayout {
+  padding: 0 1em 2em;
+  text-align: center;
+}
+
+.lastLayout > h2 {
+  color: var(--text-dark);
+  font-size: 1.5rem;
+  margin-bottom: 2em;
+}
+
+.donationInfoContainer {
+  display: grid;
+  gap: 1.5em 0;
+}
