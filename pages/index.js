@@ -19,7 +19,7 @@ import TestimonialSmall from "@/components/TestimonialSmall";
 import CtaButton from "@/components/CtaButton";
 
 
-const testimonials = [
+export const testimonials = [
   {
     text: "Food Giveaway well spent, Thanks so much to Our Common Pot for sponsoring this. May Allah reward you all accordingly. you can't imagine the smile on my face rn",
     author: "AbdulMaleek",

@@ -1,0 +1,32 @@
+.container {
+  text-align: left;
+  min-width: 295px;
+}
+
+.memberImage {
+  border-radius: 12px;
+  margin-bottom: 1.25em;
+}
+
+.memberImage img {
+  object-fit: cover;
+  max-height: 280px;
+  border-radius: 12px;
+}
+
+.memberDetails {
+  padding: 0 .75em;
+  color: var(--text-medium-dark);
+}
+.memberDetails > p:first-of-type {
+  font-weight: 700;
+}
+.memberDetails > p:nth-of-type(2) {
+  font-size: .9rem;
+  font-weight: 500;
+}
+.memberDetails > p:last-of-type {
+  font-size: .8rem;
+  font-weight: 500;
+  color: var(--text-grey-dark);
+}
