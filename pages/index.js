@@ -13,43 +13,11 @@ import vouchersImage from "../public/images/vouchers_3d.svg";
 import mealCalcImage from "../public/images/food_calculation_3d.svg";
 import shakeImage from "../public/images/handshake_3d.svg";
 import infographicsImage from "../public/images/benefits_infographic_mobile.svg";
-import testimonialVideoImage from "../public/images/testimonial_video.svg";
+import testimonialVideoImage from "../public/images/testimonial_video.jpg";
 import BlogCutout from "@/components/BlogCutout";
 import TestimonialSmall from "@/components/TestimonialSmall";
 import CtaButton from "@/components/CtaButton";
-
-
-export const testimonials = [
-  {
-    text: "Food Giveaway well spent, Thanks so much to Our Common Pot for sponsoring this. May Allah reward you all accordingly. you can't imagine the smile on my face rn",
-    author: "AbdulMaleek",
-    authorDetails: "Engineering, Univerity of Ibadan",
-  },
-  {
-    text: "Forget Agege bread for breakfast! Our Common Pot gave me proper breakfast for a whole week. \
-           Now I can analyze these novels with a full stomach and a clear head. Big ups to them!",
-    author: "Emeka",
-    authorDetails: "Literature, Univerity of Ibadan",
-  },
-  {
-    text: "Hustling is real! Between lectures and my side hustle, dinner was toast (literally).\
-           Our Common Pot blessed me with proper meals. Now I'm energized to slay both studies and work.\
-           Food scholarship next? You know it!",
-    author: "Tosin",
-    authorDetails: "Business, Univerity of Ibadan",
-  },
-  {
-    text: "Coding all night is no joke. Our Common Pot's free breakfast kept my brain working fire! No more hunger pangs during those coding sprints. Big shoutout to them for supporting students like me!",
-    author: "Dayo",
-    authorDetails: "Computer Science, Univerity of Ibadan",
-  },
-  {
-    text: "8 am lectures with an empty stomach? Never again abeg. Our Common Pot's breakfast got me focused and ready to learn all about the past. No more struggling to remember stuff on an empty belly. Thanks, Our Common Pot, una too much!",
-    author: "Lateefah",
-    authorDetails: "History, Univerity of Ibadan",
-  }
-]
-
+import { testimonials } from "@/utils/data";
 
 export default function Home() {
   return (

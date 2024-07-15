@@ -2,40 +2,16 @@ import CtaButton from "@/components/CtaButton";
 import Head from "next/head";
 import styles from "@/styles/About.module.css";
 import sharedStyles from "@/styles/shared.module.css";
-import { testimonials } from "./index";
+import { testimonials, teamMates } from "@/utils/data";
 import Image from "next/image";
 import aboutMobileHeroImage from "../public/images/about_us_image.png";
 import aboutUsImage1 from "../public/images/about_us_main.png";
 import aboutUsImage2 from "../public/images/about_us_2.png";
 import giveFoodImage from "../public/images/give_food.png";
 import studentsLaughing from "../public/images/about_end.png";
-import hopeHeadshot from "../public/images/hope_philip.png";
-import jerryHeadshot from "../public/images/jeremiah_philip.jpg";
-import adeHeadshot from "../public/images/sodiq_sanusi.png";
 import TeamMember from "@/components/TeamMember";
 import TestimonialSmall from "@/components/TestimonialSmall";
 import { IoCheckboxOutline, IoEarthOutline, IoRocketOutline } from "react-icons/io5";
-
-const teamMates = [
-  {
-    headshot: hopeHeadshot,
-    name: "Hope Philip",
-    role: "Founder",
-    location: "Ibadan, Nigeria"
-  },
-  {
-    headshot: jerryHeadshot,
-    name: "Jeremiah Philip",
-    role: "Secretary",
-    location: "Lagos, Nigeria"
-  },
-  {
-    headshot: adeHeadshot,
-    name: 'Sodiq "Ade" Sanusi',
-    role: "Technical Partner",
-    location: "Lagos, Nigeria"
-  }
-]
 
 const About = () => {
   return (
