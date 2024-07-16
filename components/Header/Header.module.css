@@ -12,7 +12,7 @@
   border: none;
   outline: none;
   background-color: transparent;
-  max-width: 38px;
+  min-width: 38px;
 }
 
 .hamburgerButton svg {
