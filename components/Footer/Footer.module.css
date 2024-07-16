@@ -106,3 +106,50 @@
   font-weight: 300;
   font-size: .9rem;
 }
+
+@media (min-width: 800px) {
+  .layout{
+    padding: 5em 0 3em;
+  }
+  .mainFooter {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1300px;
+    padding-bottom: 5em;
+  }
+
+  .mainFooterStart {
+    width: 35%;
+    margin-bottom: 0;
+  }
+  .mainFooterMid {
+    width: 30%;
+  }
+  .mainFooterEnd {
+    width: 25%;
+    padding: 0em;
+    text-align: right;
+  }
+
+  .mainFooterEnd p {
+    width: 100%;
+  }
+
+  .footerLogo {
+    width: 55%;
+    max-width: 170px;
+  }
+  .footerLogo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .footerNotes {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1300px;
+  }
+}
