@@ -1,0 +1,20 @@
+.infoContainer {
+  text-align: center;
+  padding: 0 .5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infoIcon {
+  margin-bottom: .8em;
+}
+
+.infoDetails > h3 {
+  color: var(--text-dark);
+  font-size: 1.2rem;
+  margin-bottom: .5em; 
+}
+.infoDetails > p {
+  font-size: .9rem;
+}

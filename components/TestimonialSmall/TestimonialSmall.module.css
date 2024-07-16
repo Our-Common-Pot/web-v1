@@ -1,0 +1,32 @@
+.container {
+  background-color: var(--bg-white);
+  padding: 1em;
+  color: var(--text-grey);
+  border-radius: 12px;
+  max-width: 350px;
+}
+
+.testimonialAuthor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5em;
+}
+
+.testimonialAvatar {
+  width: 20%;
+}
+.testimonialAvatar img {
+  object-fit: contain;
+}
+
+.testimonialAuthorDetails {
+  width: 70%;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.testimonialAuthorDetails > p:first-of-type {
+  color: var(--text-dark);
+  font-weight: 700;
+}

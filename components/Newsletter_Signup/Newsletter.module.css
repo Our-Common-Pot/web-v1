@@ -1,0 +1,68 @@
+.layout {
+  background-color: var(--bg-light);
+  padding: 3em 1em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 1em;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.heading {
+  color: var(--text-dark);  
+}
+
+.details {
+  color: var(--text-grey);
+}
+
+.mainForm {
+  margin-top: 1.25em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+.validationText {
+  padding: 1em;
+  border-radius: 12px;
+  background-color: var(--container-text);
+}
+
+.errorText {
+  padding: 1em;
+  border-radius: 12px;
+  background-color: #BF0000;
+  color: #FFF;
+}
+
+.emailInput {
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+  padding: .75em 1.5em;
+  border: 1px solid #404040cc;
+  border-radius: 12px;
+}
+
+.emailInput::placeholder {
+  color: var(--text-grey-light);
+}
+
+.submitBtn {
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  padding: .75em;
+  background-color: var(--primary);
+  color: var(--bg-light);
+}
+
+.submitBtn:hover, .submitBtn:focus {
+  transform: scale(.98);
+  opacity: 90%;
+}
