@@ -8,10 +8,12 @@ const NewsletterSignup = () => {
   const [emailInput, setEmailInput] = useState("");
   const [emailSent, sendEmail] = useState(false);
   const [emailError, setEmailError] = useState(false);
+  const [loading, setLoading] = useState(false);
 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     try {
       const { data } = await axios.post(sheetLink, {
         email: emailInput
@@ -20,6 +22,7 @@ const NewsletterSignup = () => {
           'Content-Type': 'application/x-www-form-urlencoded'
         }
       })
+      setLoading(false);
       if (data) {
         sendEmail(true);
       }
@@ -27,7 +30,7 @@ const NewsletterSignup = () => {
         sendEmail(false)
       }, 2000);
     } catch (error) {
-      console.log(error)
+      setLoading(false);
       setEmailError(true);
       setTimeout(() => {
         setEmailError(false)
@@ -46,12 +49,14 @@ const NewsletterSignup = () => {
           We have successfully conducted fund raising campaigns in the last 2 months
           and used the funds meticulously to provide meals for students at the University of Ibadan.
         </p>
+
+        {loading && <p className={styles.validationText}>Adding to the mailing list...</p>}
+        {emailSent && <p className={styles.validationText}>Your email has been added to the mailing list</p>}
+        {emailError && <p className={styles.errorText}>Subscription was unsuccessful. Please try again later.</p>}
         <form
           className={styles.mainForm}
           onSubmit={(e) => handleSubmit(e)}
         >
-          {emailSent && <p className={styles.validationText}>Your email has been added to the mailing list</p>}
-          {emailError && <p className={styles.errorText}>Sign Up was unsuccessful. Please try again later.</p>}
           <input type="email" name="newsletter-email" id="newsletter-email"
             placeholder="Enter your email" className={styles.emailInput} required
             value={emailInput} onChange={(e) => setEmailInput(e.target.value)}

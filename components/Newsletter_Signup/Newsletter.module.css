@@ -66,3 +66,24 @@
   transform: scale(.98);
   opacity: 90%;
 }
+
+@media (min-width: 800px) {
+  .layout {
+    padding-bottom: 12em;
+  }
+  .mainForm {
+    flex-direction: row;
+    width: 90%;
+    max-width: 700px;
+    margin: 1.25em auto 0;
+    column-gap: 1em;
+    justify-content: center;
+  }
+  .emailInput {
+    width: 65%;
+  }
+  .submitBtn {
+    width: 30%;
+    max-width: 130px;
+  }
+}
