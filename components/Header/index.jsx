@@ -22,6 +22,18 @@ const Header = () => {
         </Link>
       </div>
 
+      <ul className={styles.largeLinkContainer}>
+        <li><Link href="/">Home</Link></li>
+        <li><Link href="/about">About us</Link></li>
+        <li><Link href="/contact">Contact us</Link></li>
+        <li><Link href="/donate">Donate</Link></li>
+      </ul>
+
+      <div className={styles.headerButtonContainer}>
+        <button>Donate Now</button>
+        <button>Get Involved</button>
+      </div>
+
       <button 
         className={styles.hamburgerButton}
         onClick={handleMobileMenuClick}

@@ -25,3 +25,75 @@
 .hamburgerButton:hover svg, .hamburgerButton:focus svg{
   color: var(--text-bold);
 }
+
+.largeLinkContainer,
+.headerButtonContainer {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 2em 0;
+  }
+  .hamburgerButton {
+    display: none;
+  }
+  .largeLinkContainer,
+  .headerButtonContainer {
+    display: block;
+  }
+
+  .largeLinkContainer {
+    width: 40%;
+    max-width: 400px;
+    padding-left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .largeLinkContainer a {
+    color: var(--primary-light);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .largeLinkContainer a:hover,
+  .largeLinkContainer a:focus {
+    color: var(--accent);
+  }
+
+  .headerButtonContainer {
+    display: flex;
+    align-items: center;
+    column-gap: 2em;
+    width: 30%;
+    max-width: 320px;
+    justify-content: flex-end;
+  }
+  .headerButtonContainer button {
+    cursor: pointer;
+    background-color: transparent;
+    padding: .7em .85em;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    color: var(--container-text);
+    font-weight: 600;
+    font-size: min(1rem, 1.5vw);
+  }
+  .headerButtonContainer button:hover,
+  .headerButtonContainer button:focus {
+    transform: scale(.98);
+    opacity: 80%;
+  }
+  .headerButtonContainer button:first-of-type {
+    background-color: var(--container);
+  }
+  .headerButtonContainer button:last-of-type {
+    border-color: var(--container-text);
+    border-width: 1.8px;
+  }
+}
