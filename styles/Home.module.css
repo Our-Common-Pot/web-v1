@@ -199,6 +199,29 @@
 .bigScreenArticle {
   display: none;
 }
+.bigScreenArticle h2 {
+  color: var(--primary);
+  margin-bottom: .5em;
+}
+.bigScreenArticle p {
+  font-size: .9rem;
+  margin-bottom: 3em;
+}
+.bigScreenArticle button {
+  cursor: pointer;
+  background-color: var(--primary);
+  color: var(--primary-light);
+  border: none;
+  outline: none;
+  padding: .85em 1em;
+  border-radius: 12px;
+  font-weight: 600;
+}
+.bigScreenArticle button:hover,
+.bigScreenArticle button:focus {
+  transform: scale(.98);
+  opacity: 80%;
+}
 
 .infographicImage {
   max-width: 400px;
@@ -212,7 +235,7 @@
 .fifthLayout {
   position: relative;
   width: 90%;
-  max-width: 1500px;
+  max-width: 1250px;
   margin: 1em auto 4em;
   padding: 3em 1em;
   border-radius: 12px;
@@ -338,4 +361,190 @@
   flex-direction: column;
   align-items: center;
   row-gap: 2.25em;
+}
+
+@media (min-width: 800px) {
+  .heroContainer {
+    padding: 0 0 4em;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1250px;
+  }
+  .heroTop {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2em;
+  }
+
+  .heroTop > div:first-of-type {
+    text-align: left;
+    width: 50%;
+    max-width: 600px;
+  }
+
+  .heroWords > h1 {
+    font-size: min(3rem, 5.4vw);
+    margin-bottom: .3em;
+    line-height: normal;
+  }
+  .heroButtons {
+    margin: 0;
+  }
+
+  .mobileHeroImage {
+    width: 40%;
+    max-width: 500px;
+    margin: 0;
+  }
+  .mobileHeroImage img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .sponsorContainer {
+    width: 80%;
+    max-width: 900px;
+    gap: 1em 0;
+    grid-template-areas: "sponsor1 sponsor2 sponsor3 sponsor4 sponsor5";
+  }
+  .sponsorLogo {
+    max-width: 130px;
+  }
+
+  .secondLayout {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4em 0;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1250px;
+  }
+  .secondLayoutArticle {
+    padding: 0;
+    text-align: left;
+    width: 50%;
+    max-width: 600px;
+  }
+  .collaborationImage {
+    width: 43%;
+  }
+  .collaborationImage img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .thirdLayout {
+    padding: 4em 0;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1250px;
+  }
+  .thirdLayoutArticle {
+    max-width: 920px;
+    margin: 0 auto;
+  }
+  .infoLayout {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .infoContainer {
+    width: 20%;
+    margin: 0;
+  }
+
+  .fourthLayout {
+    padding: 3em max(3em, 9%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--container-text);
+  }
+  .bigScreenArticle {
+    display: block;
+    width: 50%;
+  }
+  .infographicImage {
+    margin: 0;
+    width: 35%;
+    max-width: 760px;
+    max-height: 560px;
+  }
+  .infographicImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .fifthLayout {
+    margin: 5em auto;
+  }
+
+  .inviteContainer > div {
+    margin: 0 auto;
+  }
+
+  .testimonialsContainer {
+    width: 90%;
+    padding: 1em 0 4em;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+
+  .testimonialVideoContainer {
+    width: 50%;
+    max-width: 1000px;
+  }
+  .testimonialVideoContainer a {
+    display: block;
+    width: 100%;
+    border-radius: 30px;
+  }
+  .testimonialVideoContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+
+  .lastLayout {
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding-bottom: 3em;
+  }
+  .lastLayout > p {
+    max-width: 730px;
+    margin: 0 auto 3em;
+  }
+  .blogCutoutContainer {
+    padding: 0;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 1100px) and (min-width: 800px) {
+  .heroContainer {
+    padding-top: 3em;
+  }
+  .heroWords > h1 {
+    font-size: 2rem;
+  }
+  .heroWords > p {
+    font-size: .9rem;
+  }
+  .heroWords button {
+    font-size: .9rem;
+  }
+  .heroTop {
+    padding-bottom: 4em;
+  }
 }

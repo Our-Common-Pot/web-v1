@@ -178,7 +178,18 @@ export default function Home() {
 
         <section className={styles.fourthLayout}>
           <article className={styles.bigScreenArticle}>
-            Hidden article
+            <h2>We have raised over $700 and served more than 8,000 meals</h2>
+            <p>
+              Thanks to your generous support, we&apos;ve raised over $700 and provided
+              more than 8,000 meals to students in need. Together, we&apos;re making a tangible
+              difference in combating food insecurity and nourishing the success of our community. <br />
+              Your contributions are transforming lives and creating brighter futures. 
+              Thank you for being a part of our missionWe look forward to receiving your generous
+              and continuous support to our organization.
+            </p>
+            <button onClick={clickToDonate}>
+              Donate Now
+            </button>
           </article>
           <div className={styles.infographicImage}>
             <Image src={infographicsImage} alt="An infographic detailing the data for Our Common Pot"/>

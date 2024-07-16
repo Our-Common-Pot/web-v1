@@ -5,8 +5,19 @@ import logo from "../../public/images/logo.svg";
 import Link from "next/link";
 import MobileMenu from "./MobileMenu";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 const Header = () => {
+
+  const router = useRouter();
+
+  const clickToDonate = () => {
+    router.push("/donate#donating");
+  }
+  const clickToGetInvolved = () => {
+    router.push("/contact#volunteerApplication");
+  }
+
   const [mobileMenuOpen, setMobileMenuState] = useState(false);
 
   const handleMobileMenuClick = () => {
@@ -30,8 +41,8 @@ const Header = () => {
       </ul>
 
       <div className={styles.headerButtonContainer}>
-        <button>Donate Now</button>
-        <button>Get Involved</button>
+        <button onClick={clickToDonate}>Donate Now</button>
+        <button onClick={clickToGetInvolved}>Get Involved</button>
       </div>
 
       <button 

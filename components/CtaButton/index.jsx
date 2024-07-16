@@ -14,9 +14,6 @@ const CtaButton = () => {
      onClick={clickToDonate}
     >
       Donate To Combat Hunger Among Students
-      <span>
-        Donate Now
-      </span>
     </button>
   );
 }

@@ -12,9 +12,12 @@
   font-size: .9rem;
   margin: 0 auto 3em;
 }
-.topCtaButton > span {
-  display: none;
-}
 .topCtaButton:hover, .topCtaButton:focus {
   color: var(--accent);
+}
+
+@media (min-width: 800px) {
+  .topCtaButton {
+    margin: 0em 0em 1em;
+  }
 }
