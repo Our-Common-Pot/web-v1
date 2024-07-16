@@ -120,6 +120,11 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 1.5em;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.metricsContainer::-webkit-scrollbar {
+  display: none;
 }
 
 .metric {
