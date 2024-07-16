@@ -18,8 +18,19 @@ import BlogCutout from "@/components/BlogCutout";
 import TestimonialSmall from "@/components/TestimonialSmall";
 import CtaButton from "@/components/CtaButton";
 import { testimonials } from "@/utils/data";
+import { useRouter } from "next/router";
 
 export default function Home() {
+
+  const router = useRouter();
+
+  const clickToDonate = () => {
+    router.push("/donate#donating");
+  }
+  const clickToGetInvolved = () => {
+    router.push("/contact#volunteerApplication");
+  }
+
   return (
     <>
       <Head>
@@ -47,8 +58,18 @@ export default function Home() {
                     Join us in our mission to combat hunger among University Students.
                   </p>
                   <div className={styles.heroButtons}>
-                    <button className={styles.heroButton1}>Donate Now</button>
-                    <button className={styles.heroButton2}>Get Involved</button>
+                    <button
+                     className={styles.heroButton1}
+                     onClick={clickToDonate}
+                    >
+                      Donate Now
+                    </button>
+                    <button
+                     className={styles.heroButton2}
+                     onClick={clickToGetInvolved}
+                    >
+                      Get Involved
+                    </button>
                   </div>
                 </div>
               </div>
@@ -90,8 +111,18 @@ export default function Home() {
               a stronger and more vibrant community.
             </p>
             <div className={styles.heroButtons}>
-              <button className={styles.secondLayoutBtn1}>Donate Now</button>
-              <button className={styles.secondLayoutBtn2}>Volunteer</button>
+              <button
+               className={styles.secondLayoutBtn1}
+               onClick={clickToDonate}
+              >
+                Donate Now
+              </button>
+              <button
+               className={styles.secondLayoutBtn2}
+               onClick={clickToGetInvolved}
+              >
+                Volunteer
+              </button>
             </div>
           </div>
 
@@ -163,8 +194,18 @@ export default function Home() {
               Your support will make a meaningful impact on the lives of those in need.
             </p>
             <div className={styles.heroButtons}>
-              <button className={styles.sponsorButton1}>Donate Now</button>
-              <button className={styles.sponsorButton2}>Get Involved</button>
+              <button
+               className={styles.sponsorButton1}
+               onClick={clickToDonate}
+              >
+                Donate Now
+              </button>
+              <button
+               className={styles.sponsorButton2}
+               onClick={clickToGetInvolved}
+              >
+                Get Involved
+              </button>
             </div>
           </div>
           <div className={styles.blurredFix}></div>

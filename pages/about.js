@@ -12,8 +12,19 @@ import studentsLaughing from "../public/images/about_end.png";
 import TeamMember from "@/components/TeamMember";
 import TestimonialSmall from "@/components/TestimonialSmall";
 import { IoCheckboxOutline, IoEarthOutline, IoRocketOutline } from "react-icons/io5";
+import { useRouter } from "next/router";
 
 const About = () => {
+
+  const router = useRouter();
+
+  const clickToDonate = () => {
+    router.push("/donate#donating");
+  }
+  const clickToGetInvolved = () => {
+    router.push("/contact#volunteerApplication");
+  }
+
   return (
     <>
       <Head>
@@ -39,8 +50,18 @@ const About = () => {
                 create a future where every student has access to nutritious meals and support services.
               </p>
               <div className={sharedStyles.heroButtons}>
-                <button className={sharedStyles.heroButton1}>Donate Now</button>
-                <button className={sharedStyles.heroButton2}>Get Involved</button>
+                <button
+                 className={sharedStyles.heroButton1}
+                 onClick={clickToDonate}
+                >
+                  Donate Now
+                </button>
+                <button
+                 className={sharedStyles.heroButton2}
+                 onClick={clickToGetInvolved}
+                >
+                  Get Involved
+                </button>
               </div>
             </div>
           </div>
@@ -107,7 +128,9 @@ const About = () => {
               access to education, healthcare, and basic necessities. We are proud of
               the progress we have made and remain committed to creating a better future for all.
             </p>
-            <button>Donate Now</button>
+            <button onClick={clickToDonate}>
+              Donate Now
+            </button>
           </div>
 
           <div className={styles.metricsContainer}>
@@ -204,7 +227,12 @@ const About = () => {
             <h2>Get Involved Today By Joining Our List Of Campus Partners</h2>
             <p>Join Us Today In Combating Hunger And Food Insecurity Among University Students.</p>
             <div className={sharedStyles.heroButtons}>
-              <button className={styles.getInvolvedButton}>Get Involved</button>
+              <button
+               className={styles.getInvolvedButton}
+               onClick={clickToGetInvolved}
+              >
+                Get Involved
+              </button>
             </div>
           </div>
           <div className={styles.blurredFix}></div>
@@ -219,8 +247,18 @@ const About = () => {
               creating a stronger and more vibrant community.
             </p>
             <div className={sharedStyles.heroButtons}>
-              <button className={sharedStyles.heroButton1}>Donate Now</button>
-              <button className={styles.focusButton2}>Volunteer</button>
+              <button
+               className={sharedStyles.heroButton1}
+               onClick={clickToDonate}
+              >
+                Donate Now
+              </button>
+              <button
+               className={styles.focusButton2}
+               onClick={clickToGetInvolved}
+              >
+                Volunteer
+              </button>
             </div>
           </article>
 

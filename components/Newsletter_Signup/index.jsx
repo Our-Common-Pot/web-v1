@@ -1,7 +1,7 @@
 import styles from "./Newsletter.module.css";
 import { useState } from "react";
 
-const Newsletter_Signup = () => {
+const NewsletterSignup = () => {
 
   const [emailInput, setEmailInput] = useState("");
 
@@ -38,4 +38,4 @@ const Newsletter_Signup = () => {
   );
 }
 
-export default Newsletter_Signup;
+export default NewsletterSignup;

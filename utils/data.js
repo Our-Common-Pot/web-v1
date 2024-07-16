@@ -95,3 +95,6 @@ export const donationsInfos = [
     details: "Upon making a donation to Our Common Pot, you will receive acknowledgment of your contribution in the form of a receipt or confirmation email. This acknowledgment will include details such as the amount of your donation, the date of your donation, and any specified designations for the use of your donation."
   },
 ]
+
+export const volunteerLink = "https://docs.google.com/forms/d/e/1FAIpQLSf0W1-Ne3rd67C_cv92DNxkjdpw8IesZpxB3SrN1egY1Zb-SQ/viewform?usp=sf_link";
+export const beneficiaryLink = "https://docs.google.com/forms/u/0/d/1VZ6VZ4dCYbtFwsEUfV55o9pYRRtEs8opZ5y9DVyBL88/edit?fromCopy=true&ct=2";

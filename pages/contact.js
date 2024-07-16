@@ -12,9 +12,26 @@ import fundraisingImage from "../public/images/contact_fundraising.png";
 import Image from "next/image";
 import { IoCall, IoLocationSharp, IoLogoWhatsapp, IoMailSharp } from "react-icons/io5";
 import Info from "@/components/Info";
-import { volunteerInfos } from "@/utils/data";
+import { beneficiaryLink, volunteerInfos, volunteerLink } from "@/utils/data";
+import { useRouter } from "next/router";
 
 const Contact = () => {
+
+  const router = useRouter();
+
+  const clickToDonate = () => {
+    router.push("/donate#donating");
+  }
+  const clickToGetInvolved = () => {
+    router.push("/contact#volunteerApplication");
+  }
+  const clickToGetDirections = () => {
+    router.push("https://maps.app.goo.gl/NsTT5mhd8FGnDtdq5");
+  }
+  const clickToApplyAsBeneficiary = () => {
+    router.push(beneficiaryLink);
+  }
+
   return (
     <>
       <Head>
@@ -39,8 +56,18 @@ const Contact = () => {
                 Reach out today and let&apos;s work together towards a brighter future for all.
               </p>
               <div className={sharedStyles.heroButtons}>
-                <button className={sharedStyles.heroButton1}>Donate Now</button>
-                <button className={sharedStyles.heroButton2}>Get Involved</button>
+                <button
+                 className={sharedStyles.heroButton1}
+                 onClick={clickToDonate}
+                >
+                  Donate Now
+                 </button>
+                <button
+                 className={sharedStyles.heroButton2}
+                 onClick={clickToGetInvolved}
+                >
+                  Get Involved
+                 </button>
               </div>
             </div>
           </div>
@@ -93,7 +120,10 @@ const Contact = () => {
               Come visit our office and see firsthand the heart behind Our Common Pot.
               Our doors are always open, and we&apos;d love to welcome you into our space.
             </p>
-            <button className={styles.directionsButton}>
+            <button
+             className={styles.directionsButton}
+             onClick={clickToGetDirections}
+            >
               Get Directions
             </button>
           </div>
@@ -173,7 +203,9 @@ const Contact = () => {
                 support our beneficiaries. By meeting these requirements, you can take
                 advantage of our programs and services.
               </p>
-              <button>Apply Here</button>
+              <button onClick={clickToApplyAsBeneficiary}>
+                Apply Here
+              </button>
             </div>
 
             <div className={styles.criteriaDetailsContainer}>
@@ -254,7 +286,9 @@ const Contact = () => {
                   setup, coordination, and logistics to ensure smooth operations and
                   an efficient distribution process.
                 </p>
-                <a href="#">Apply now</a>
+                <a href={volunteerLink} target="_blank" rel="noopener">
+                  Apply now
+                </a>
               </article>
             </div>
             <div className={styles.volunteerPosition}>
@@ -269,7 +303,9 @@ const Contact = () => {
                   inventory management, shelving, and ensuring that pantry shelves are
                   well-stocked and organized for easy access by students.
                 </p>
-                <a href="#">Apply now</a>
+                <a href={volunteerLink} target="_blank" rel="noopener">
+                  Apply now
+                </a>
               </article>
             </div>
             <div className={styles.volunteerPosition}>
@@ -284,7 +320,9 @@ const Contact = () => {
                   budgeting, and food sustainability. Lead engaging and informative
                   sessions that empower students with valuable information and resources.
                 </p>
-                <a href="#">Apply now</a>
+                <a href={volunteerLink} target="_blank" rel="noopener">
+                  Apply now
+                </a>
               </article>
             </div>
             <div className={styles.volunteerPosition}>
@@ -299,7 +337,9 @@ const Contact = () => {
                   fundraising events, campaigns, or initiatives to raise funds and awareness
                   for food assistance programs.
                 </p>
-                <a href="#">Apply now</a>
+                <a href={volunteerLink} target="_blank" rel="noopener">
+                  Apply now
+                </a>
               </article>
             </div>
           </div>

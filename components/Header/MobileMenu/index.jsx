@@ -34,10 +34,7 @@ const MobileMenu = ({handleMobileMenuClick}) => {
           <Link href="/contact" onClick={handleMobileMenuClick}>Contact Us</Link>
         </li>
         <li className={styles.linkItem}>
-          <Link href="/donate" onClick={handleMobileMenuClick}>Donations</Link>
-        </li>
-        <li className={styles.linkItem}>
-          <Link href="/testimonials" onClick={handleMobileMenuClick}>Media</Link>
+          <Link href="/donate" onClick={handleMobileMenuClick}>Donate</Link>
         </li>
       </ul>
     </main>

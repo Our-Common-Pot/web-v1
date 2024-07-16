@@ -14,8 +14,19 @@ import donateMidImage from "../public/images/about_end.png";
 import Info from "@/components/Info";
 import testimonialVideoImage from "../public/images/testimonial_video.jpg";
 import { donationsInfos } from "@/utils/data";
+import { useRouter } from "next/router";
 
 const Donate = () => {
+
+  const router = useRouter();
+
+  const clickToDonate = () => {
+    router.push("/donate#donating");
+  }
+  const clickToGetInvolved = () => {
+    router.push("/contact#volunteerApplication");
+  }
+
   return (
     <>
       <Head>
@@ -41,8 +52,18 @@ const Donate = () => {
                 success and well-being.
               </p>
               <div className={sharedStyles.heroButtons}>
-                <button className={sharedStyles.heroButton1}>Donate Now</button>
-                <button className={sharedStyles.heroButton2}>Get Involved</button>
+                <button
+                 className={sharedStyles.heroButton1}
+                 onClick={clickToDonate}
+                >
+                  Donate Now
+                </button>
+                <button
+                 className={sharedStyles.heroButton2}
+                 onClick={clickToGetInvolved}
+                >
+                  Get Involved
+                </button>
               </div>
             </div>
           </div>
@@ -52,7 +73,7 @@ const Donate = () => {
           </div>
         </section>
 
-        <section className={styles.secondLayout}>
+        <section className={styles.secondLayout} id="donating">
           <div className={styles.donateIntro}>
             <h2>Make a Difference with Your Donations</h2>
             <p>
@@ -177,8 +198,18 @@ const Donate = () => {
               Apply to be a volunteer today!
             </p>
             <div className={sharedStyles.heroButtons}>
-              <button className={styles.donateButton1}>Donate Today</button>
-              <button className={styles.donateButton2}>Volunteer</button>
+              <button
+               className={styles.donateButton1}
+               onClick={clickToDonate}
+              >
+                Donate Today
+              </button>
+              <button
+               className={styles.donateButton2}
+               onClick={clickToGetInvolved}
+              >
+                Volunteer
+              </button>
             </div>
           </div>
           <div className={styles.blurredFix}></div>
