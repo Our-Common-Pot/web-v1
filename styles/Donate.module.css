@@ -9,6 +9,7 @@
 }
 
 .donateIntro {
+  position: relative;
   padding: 0 .5em 4em;
 }
 .donateIntro > h2 {
@@ -23,7 +24,7 @@
 .donateBanksContainer {
   padding: 0 1em;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   row-gap: 2em;
 }
@@ -232,4 +233,76 @@
 .donationInfoContainer {
   display: grid;
   gap: 1.5em 0;
+}
+
+.popoutContainer {
+  width: 100%;
+  min-height: 90%;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 22%;
+  transform: translate(-50%, -20%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary);
+  color: var(--primary-lighter);
+  padding: 2em 1em;
+  border-radius: 12px;
+}
+
+.popoutContainer > button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-left: auto;
+  width: 50%;
+  max-width: 50px;
+  color: var(--primary-light);
+}
+.popoutContainer > h2 {
+  color: var(--primary-light);
+  font-size: 1.5rem;
+  margin-bottom: .5em;
+}
+
+.accountNumberContainer {
+  display: flex;
+  align-items: center;
+  column-gap: .1em;
+}
+.accountNumberContainer p {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.accountNumberContainer button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--primary-light);
+}
+.accountNumberContainer button:hover,
+.accountNumberContainer button:focus {
+  color: var(--accent);
+  transform: scale(.98);
+}
+.popoutAccount {
+  padding-bottom: 2em;
+}
+.popoutAccount > p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.popoutThanks {
+  padding: 0 1em 2em;
+  font-size: 1.2rem;
+}
+
+.popoutInfo  a {
+  color: var(--primary-lighter);
 }

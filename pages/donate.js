@@ -5,7 +5,7 @@ import styles from "@/styles/Donate.module.css";
 import donateVolunteersImage from "../public/images/donate_volunteers.jpg";
 import readingStudentsImage from "../public/images/donate_students_reading.jpg";
 import Image from "next/image";
-import { IoChevronForward } from "react-icons/io5";
+import { IoChevronForward, IoCloseCircleOutline, IoCopyOutline } from "react-icons/io5";
 import boxIcon from "../public/images/donate_list_image.svg";
 import starIcon from "../public/images/star.svg";
 import bankLogo from "../public/images/donate_bank.svg";
@@ -13,12 +13,24 @@ import flutterwaveLogo from "../public/images/donate_flutterwave.svg";
 import donateMidImage from "../public/images/about_end.png";
 import Info from "@/components/Info";
 import testimonialVideoImage from "../public/images/testimonial_video.jpg";
-import { donationsInfos } from "@/utils/data";
+import { donationsInfos, accountDetails } from "@/utils/data";
 import { useRouter } from "next/router";
+import { useState } from "react";
 
 const Donate = () => {
 
+  const [popupOut, setPopup] = useState(false);
   const router = useRouter();
+
+  const openPopup = () => {
+    setPopup(true);
+  }
+  const closePopup = () => {
+    setPopup(false)
+  }
+  const copyToClipboard = (txt) => {
+    navigator.clipboard.writeText(txt);
+  }
 
   const clickToDonate = () => {
     router.push("/donate#donating");
@@ -75,6 +87,34 @@ const Donate = () => {
 
         <section className={styles.secondLayout} id="donating">
           <div className={styles.donateIntro}>
+            {popupOut && (
+              <div className={styles.popoutContainer}>
+                <button onClick={closePopup}>
+                  <IoCloseCircleOutline size={35}/>
+                </button>
+                <h2>Donate to us via:</h2>
+                <div className={styles.popoutAccount}>
+                  <div className={styles.accountNumberContainer}>
+                    <p>{accountDetails.accountNumber}</p>
+                    <button onClick={copyToClipboard(accountDetails.accountNumber)}>
+                      <IoCopyOutline size={30}/>
+                    </button>
+                  </div>
+                  <p>{accountDetails.bankName}</p>
+                  <p>{accountDetails.accountName}</p>
+                </div>
+                <p className={styles.popoutThanks}>
+                  Thanks to your support, we&apos;re one step closer to ending hunger for Nigerian
+                  university students. Thank you
+                </p>
+                <div className={styles.popoutInfo}>
+                  <p>
+                    Note - Enquiry or receipt for confirmation of payment can be sent
+                    to <a href="mailto:info@ourcommonpot.org">info@ourcommonpot.org</a>
+                  </p>
+                </div>
+              </div>
+            )}
             <h2>Make a Difference with Your Donations</h2>
             <p>
               Your generous donations directly support our NGO&apos;s causes and have
@@ -90,7 +130,7 @@ const Donate = () => {
                   By donating to our organization, you are making a direct impact on the
                   lives of individuals in need.
                 </p>
-                <button>
+                <button onClick={openPopup}>
                   <p>Donate</p>
                   <IoChevronForward />
                 </button>
@@ -103,7 +143,7 @@ const Donate = () => {
                   Your contributions help us provide essential resources, and create
                   sustainable solutions for communities.
                 </p>
-                <button>
+                <button onClick={openPopup}>
                   <p>Donate</p>
                   <IoChevronForward />
                 </button>

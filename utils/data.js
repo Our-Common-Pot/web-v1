@@ -96,6 +96,12 @@ export const donationsInfos = [
   },
 ]
 
+export const accountDetails = {
+  bankName: "Guaranty Trust Bank",
+  accountNumber: "0226401882",
+  accountName: "Philip Hope Ifeoluwa",
+}
+
 export const volunteerLink = "https://docs.google.com/forms/d/e/1FAIpQLSf0W1-Ne3rd67C_cv92DNxkjdpw8IesZpxB3SrN1egY1Zb-SQ/viewform?usp=sf_link";
 export const beneficiaryLink = "https://docs.google.com/forms/u/0/d/1VZ6VZ4dCYbtFwsEUfV55o9pYRRtEs8opZ5y9DVyBL88/edit?fromCopy=true&ct=2";
 export const sheetLink = "https://script.google.com/macros/s/AKfycbwKBeZzI8IZm9uyiVl0Kh6isqCh7DzErRjlA8xiu-jqzgFDg2lqQts5kQrz8QNmJGb8/exec";
