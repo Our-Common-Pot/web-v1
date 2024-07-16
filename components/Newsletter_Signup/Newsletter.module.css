@@ -27,6 +27,19 @@
   row-gap: 1em;
 }
 
+.validationText {
+  padding: 1em;
+  border-radius: 12px;
+  background-color: var(--container-text);
+}
+
+.errorText {
+  padding: 1em;
+  border-radius: 12px;
+  background-color: #BF0000;
+  color: #FFF;
+}
+
 .emailInput {
   background-color: transparent;
   outline: none;
