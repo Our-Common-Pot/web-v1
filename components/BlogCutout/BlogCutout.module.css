@@ -47,3 +47,23 @@
   display: flex;
   column-gap: .75em;
 }
+
+@media (min-width: 800px) {
+  .container {
+    max-width: 495px;
+  }
+  .articleTitles {
+    padding-bottom: .5em;
+  }
+  .articleTitles > h2 {
+    font-size: 1.25rem;
+  }
+  .articleAuthor {
+    width: 40%;
+  } .articleAuthor > p {
+    font-size: 1rem;
+  }
+  .articleInfo {
+    font-size: 15px;
+  }
+}

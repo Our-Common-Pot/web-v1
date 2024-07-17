@@ -7,7 +7,7 @@ import Image from "next/image";
 import aboutMobileHeroImage from "../public/images/about_us_image.png";
 import aboutUsImage1 from "../public/images/about_us_main.png";
 import aboutUsImage2 from "../public/images/about_us_2.png";
-import giveFoodImage from "../public/images/give_food.png";
+import giveFoodImage from "../public/images/give_food.jpg";
 import studentsLaughing from "../public/images/about_end.png";
 import TeamMember from "@/components/TeamMember";
 import TestimonialSmall from "@/components/TestimonialSmall";
@@ -196,7 +196,7 @@ const About = () => {
 
         <section className={styles.seventhLayout}>
           <div className={styles.goalDetails}>
-            <IoRocketOutline size={30}/>
+            <IoRocketOutline />
             <h2>Expanded Reach and Impact</h2>
             <p>
               This expanded reach enables campuses to make a meaningful difference in
@@ -204,7 +204,7 @@ const About = () => {
             </p>
           </div>
           <div className={styles.goalDetails}>
-            <IoCheckboxOutline size={30}/>
+            <IoCheckboxOutline />
             <h2>Enhanced Student Support Services</h2>
             <p>
               By working together, tertiary institutions can offer a comprehensive
@@ -213,7 +213,7 @@ const About = () => {
             </p>
           </div>
           <div className={styles.goalDetails}>
-            <IoEarthOutline size={30}/>
+            <IoEarthOutline />
             <h2>Resource Sharing and Efficiency</h2>
             <p>
               Collaboration with the NGO enables tertiary institutions to share resources,

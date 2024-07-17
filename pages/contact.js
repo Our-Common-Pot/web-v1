@@ -85,7 +85,7 @@ const Contact = () => {
 
           <div className={styles.contactDetailsContainer}>
             <div className={styles.contactDetails}>
-              <IoLocationSharp size={24}/>
+              <IoLocationSharp />
               <p>Location</p>
               <p>Visit our office for in-person meetings and consultation</p>
               <a href="https://maps.app.goo.gl/NsTT5mhd8FGnDtdq5" target="_blank" rel="noopener">
@@ -93,19 +93,19 @@ const Contact = () => {
               </a>
             </div>
             <div className={styles.contactDetails}>
-              <IoCall size={24}/>
+              <IoCall />
               <p>Call</p>
               <p>Call us and speak directly with our representatives</p>
               <a href="tel:+2348154689567">+234 815 468 9567</a>
             </div>
             <div className={styles.contactDetails}>
-              <IoMailSharp size={24}/>
+              <IoMailSharp />
               <p>Email</p>
               <p>Send us an email and we will respond as soon as possible</p>
               <a href="mailto:info@ourcommonpot.org">info@ourcommonpot.org</a>
             </div>
             <div className={styles.contactDetails}>
-              <IoLogoWhatsapp size={24}/>
+              <IoLogoWhatsapp />
               <p>Chat</p>
               <p>Chat with our team in real time for immediate response</p>
               <a href="https://wa.me/7088296120" target="_blank" rel="noopener">Start a chat</a>
@@ -144,6 +144,7 @@ const Contact = () => {
               <p>2pm &mdash; 5pm</p>
             </div>
           </div>
+          <div className={styles.blurFix}></div>
         </section>
 
         <section className={styles.fourthLayout} id="beneficiaryApplication">
@@ -184,6 +185,62 @@ const Contact = () => {
                 <p>
                   If your application is approved, you will receive assistance
                   from Our Common Pot according to the program(s) for which you are eligible.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className={styles.largeEligibilityCheckContainer}>
+            <div className={styles.largeEligibilityCheck}>
+              <p>01</p>
+              <div className={styles.largeEligibilityCheckDetails}>
+                <h3>Check Eligibility</h3>
+                <p>
+                  Ensure that you meet the eligibility criteria for assistance from Our Common Pot.
+                  This includes being enrolled as a student at a tertiary institution and
+                  demonstrating financial need.
+                </p>
+              </div>
+            </div>
+            <div className={styles.largeEligibilityCheck}>
+              <p>02</p>
+              <div className={styles.largeEligibilityCheckDetails}>
+                <h3>Gather Documentation</h3>
+                <p>
+                  Collect the necessary documentation to support your application.
+                  This may include:<br />1. Student ID or enrollment verification<br />
+                  2. Any additional documentation requested by Our Common Pot.
+                </p>
+              </div>
+            </div>
+            <div className={styles.largeEligibilityCheck}>
+              <p>03</p>
+              <div className={styles.largeEligibilityCheckDetails}>
+                <h3>Complete the Application Form</h3>
+                <p>
+                  Fill out the online application form provided on our website.
+                  Be sure to provide accurate and complete information to expedite the review process.
+                </p>
+              </div>
+            </div>
+            <div className={styles.largeEligibilityCheck}>
+              <p>04</p>
+              <div className={styles.largeEligibilityCheckDetails}>
+                <h3>Review and Notification</h3>
+                <p>
+                  Our team will review your application and documentation to determine
+                  eligibility for assistance. You will be notified of the status of your
+                  application via email or phone within 7 working days.
+                </p>
+              </div>
+            </div>
+            <div className={styles.largeEligibilityCheck}>
+              <p>05</p>
+              <div className={styles.largeEligibilityCheckDetails}>
+                <h3>Receive Assistance</h3>
+                <p>
+                  If your application is approved, you will receive assistance from Our Common Pot
+                  according to the program(s) for which you are eligible. This may include
+                  meal distributions, pantry services, or educational support.
                 </p>
               </div>
             </div>

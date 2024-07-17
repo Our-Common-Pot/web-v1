@@ -24,6 +24,7 @@ const Footer = () => {
             <li>
               <a href="https://www.instagram.com/ourcommonpot/"
                 target="_blank" rel="noopener"
+                aria-label="Visit our Instagram page"
               >
                 <FaInstagram size={20}/>
               </a>
@@ -31,6 +32,7 @@ const Footer = () => {
             <li>
               <a href="https://twitter.com/OurCommonPot/"
                 target="_blank" rel="noopener"
+                aria-label="Visit our Twitter page"
               >
                 <FaXTwitter size={20}/>
               </a>
@@ -38,6 +40,7 @@ const Footer = () => {
             <li>
               <a href="https://facebook.com/people/Our-Common-Pot/100084765077542/"
                 target="_blank" rel="noopener"
+                aria-label="Visit our Facebook page"
               >
                 <FiFacebook size={20}/>
               </a>
@@ -45,6 +48,7 @@ const Footer = () => {
             <li>
               <a href="https://www.linkedin.com/company/our-common-pot/"
                 target="_blank" rel="noopener"
+                aria-label="Visit our LinkedIn page"
               >
                 <FiLinkedin size={20}/>
               </a>

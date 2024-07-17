@@ -41,6 +41,8 @@
 }
 .contactDetails svg {
   margin-bottom: 1em;
+  width: 24px;
+  height: 24px;
 }
 .contactDetails p:first-of-type {
   font-size: 1.25rem;
@@ -56,6 +58,7 @@
 }
 
 .thirdLayout {
+  position: relative;
   padding: 1em 1em 4em;
   text-align: center;
   display: flex;
@@ -63,6 +66,7 @@
 }
 
 .hoursIntro {
+  z-index: 3;
   padding: 0 .5em;
   max-width: 530px;
   margin: 0 auto 3em;
@@ -95,6 +99,7 @@
 }
 
 .hoursDetails {
+  z-index: 3;
   background-color: var(--primary);
   padding: 1.5em 1.5em .5em;
   border-radius: 24px;
@@ -120,6 +125,18 @@
 .dailyHour p:first-of-type{
   font-size: 1.2rem;
   font-weight: 700;
+}
+
+.blurFix {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.60);
+  z-index: 2;
+  border-radius: 24px;
 }
 
 .fourthLayout {
@@ -155,6 +172,38 @@
 }
 .eligibilityCheckDetails p {
   font-size: .9rem;
+}
+
+.largeEligibilityCheckContainer {
+  display: none;
+  padding: 2em 0 4em;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2em 1em;
+}
+.largeEligibilityCheck {
+  display: flex;
+  column-gap: .9em;
+  padding: 1em .8em;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.10);
+  border-radius: 24px;
+  max-width: 470px;
+  align-items: flex-start;
+}
+.largeEligibilityCheck > p {
+  color: var(--button-bg);
+  font-size: 1.7rem;
+  font-weight: 700;
+  width: 20%;
+  transform: translateY(-3px);
+}
+.largeEligibilityCheckDetails {
+  text-align: left;
+}
+.largeEligibilityCheckDetails h3 {
+  color: var(--text-dark);
+  font-size: 1.2rem;
+  margin-bottom: .5em;
 }
 
 .fifthLayout {
@@ -209,8 +258,7 @@
 
 .criteriaDetailsContainer {
   padding: 3em 0 0;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   row-gap: 2em;
 }
 .criteriaDetail {
@@ -290,4 +338,178 @@
 .infoContainer {
   display: grid;
   gap: 1.5em 0;
+}
+
+@media (min-width: 800px) {
+  .secondLayout {
+    padding: 3em 0;
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+
+  .contactDetailsContainer {
+    padding: 2em 0;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .contactDetails {
+    padding: 1em .2em;
+    width: 23%;
+    max-width: 250px;
+    box-shadow: none;
+  }
+  .contactDetails svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .thirdLayout {
+    width: 90%;
+    max-width: 1250px;
+    margin: 2em auto 7em;
+    background-color: var(--background-muted);
+    background-image: url("../public/images/contact_volunteer_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 24px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em min(4em, 5%);
+  }
+  .hoursIntro {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    text-align: left;
+  }
+  .hoursIntro > h2 {
+    color: var(--primary-light);
+    font-size: 1.7rem;
+  }
+  .hoursIntro > p {
+    color: var(--primary-lighter);
+  }
+  .hoursIntro > button {
+    color: var(--primary-light);
+    border-color: var(--primary-light);
+    max-width: 150px;
+  }
+  .hoursDetails {
+    margin: 0;
+    width: 40%;
+  }
+  .blurFix {
+    display: block;
+  }
+
+  .fourthLayout {
+    padding: 0;
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto 3em;
+  }
+  .fourthLayout > p {
+    max-width: 790px;
+    margin: 0 auto 2em;
+  }
+  .eligibilityCheckContainer {
+    display: none;
+  }
+  .largeEligibilityCheckContainer {
+    display: grid;
+  }
+
+  .fifthLayout {
+    padding: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto 7em;
+  }
+  .libraryImage {
+    width: 30%;
+  }
+  .libraryImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: none;
+  }
+  .criteriaContainer {
+    padding: 0;
+    width: 60%;
+  }
+  .criteriaIntro {
+    align-items: flex-start;
+    max-width: 600px;
+  }
+  .criteriaIntro > button {
+    max-width: 150px;
+  }
+  .criteriaDetailsContainer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2em 1.5em;
+  }
+
+  .sixthLayout {
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto 7em;
+    padding: 0%;
+  }
+  .sixthLayout > p {
+    max-width: 745px;
+    margin: 0 auto 4em;
+  }
+
+  .lastLayout {
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 0 4em;
+  }
+  .lastLayout > h2 {
+    max-width: 620px;
+    margin: 0 auto 3em;
+  }
+  .infoContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5em 2.5em;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1100px) {
+  .largeEligibilityCheck {
+    flex-direction: column;
+  }
+  .fifthLayout {
+    flex-direction: column;
+    row-gap: 3em;
+  }
+  .libraryImage {
+    width: 100%;
+  } .libraryImage img {
+    max-width: 400px;
+  }
+  .criteriaContainer {
+    width: 90%;
+  }
+  .criteriaIntro {
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
 }
