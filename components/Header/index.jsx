@@ -48,6 +48,7 @@ const Header = () => {
       <button 
         className={styles.hamburgerButton}
         onClick={handleMobileMenuClick}
+        aria-label="Click to open mobile menu"
       >
         <FaBars size={24}/>
       </button>

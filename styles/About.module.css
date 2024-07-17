@@ -232,6 +232,8 @@
 
 .goalDetails svg {
   color: var(--primary);
+  width: 30px;
+  height: 30px;
 }
 .goalDetails h2 {
   padding: 1.3em 0 .65em;
@@ -250,7 +252,7 @@
   padding: 3em 1em;
   border-radius: 12px;
   background-color: var(--background-muted);
-  background-image: url("../public/images/give_food.png");
+  background-image: url("../public/images/give_food.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -325,3 +327,232 @@
   max-height: 260px;
   margin: 0 auto;
 }
+
+@media (min-width: 800px) {
+  .secondLayout {
+    padding: 2em 0 4em;
+    max-width: none;
+  }
+  .common:first-of-type .commonImage {
+    display: block;
+  }
+  .common:last-of-type{
+    flex-direction: row-reverse;
+  } .common:last-of-type .commonStatement {
+    text-align: right;
+  }
+  .common {
+    flex-direction: row;
+    padding: 2em 0;
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .commonStatement {
+    width: 50%;
+    text-align: left;
+    padding: 0;
+  }
+  .commonStatement > h2 {
+    font-size: 2rem;
+  }
+  .commonImage {
+    width: 40%;
+    max-width: 600px;
+    margin: 0;
+  }
+  .commonImage img {
+    max-height: none;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .thirdLayout {
+    width: 90%;
+    max-width: 1250px;
+    padding-bottom: 4em;
+  }
+  .teamIntro {
+    padding: 0;
+    padding-bottom: 3em;
+  }
+  .teamMembers {
+    padding: 0;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+
+  .fourthLayout {
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3em;
+    width: 100%;
+    border-radius: 0%;
+    margin: 0;
+  }
+  .metricIntro {
+    max-width: 900px;
+    padding: 0;
+  }
+  .metricIntro > h2 {
+    font-size: 1.8rem;
+  }
+  .metricIntro > p {
+    margin-bottom: 2.5em;
+  }
+  .metricIntro > button {
+    max-width: 200px;
+  }
+  .metricsContainer {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 2em 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .metric {
+    justify-content: center;
+  }
+
+  .testimonialsContainer {
+    width: 90%;
+    padding: 1em 0 4em;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+  .testimonialIntro {
+    padding: 0;
+  }
+
+  .sixthLayout {
+    flex-direction: row;
+    padding: 2em 0 4em;
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .partnerIntro {
+    width: 55%;
+    max-width: 640px;
+    text-align: left;
+    padding: 0;
+  }
+  .partnerIntro > h2 {
+    font-size: 2rem;
+  }
+  .partnerImage {
+    width: 40%;
+    max-width: 700px;
+    max-height: 425px;
+    margin: 0;
+  }
+  .partnerImage img {
+    max-height: none;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .seventhLayout {
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto 7em;
+    column-gap: 2em;
+    border-radius: 8px;
+    padding: 4em 2em;
+    background-color: var(--background-muted);
+  }
+  .goalDetails {
+    padding: 0%;
+  }
+  .goalDetails svg {
+    color: var(--container-text);
+    width: 40px;
+    height: 40px;
+  }
+  .goalDetails > h2 {
+    color: var(--primary-light);
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+  .goalDetails > p {
+    color: var(--primary-lighter);
+  }
+
+  .eightLayout {
+    max-width: 1250px;
+    margin: 0 auto 7em;
+  }
+  .inviteContainer {
+    max-width: 870px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inviteContainer > h2 {
+    font-size: 1.7rem;
+  }
+  .inviteContainer .getInvolvedButton {
+    width: 100%;
+  }
+
+  .lastLayout {
+    display: flex;
+    flex-direction: row;
+    padding: 2em 0 4em;
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .focusIntro {
+    width: 55%;
+    max-width: 600px;
+    text-align: left;
+    padding: 0;
+  }
+  .focusIntro > h2 {
+    font-size: 1.7rem;
+  }
+  .focusIntro > p {
+    margin-bottom: 2em;
+  }
+  .focusIntro .focusButton2 {
+    border-width: 1.8px;
+    font-weight: 600;
+  }
+  .focusImage {
+    width: 40%;
+    max-width: 700px;
+    max-height: 425px;
+    margin: 0;
+  }
+  .focusImage img {
+    max-height: none;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 1100px) and (min-width: 800px) {
+
+} */
