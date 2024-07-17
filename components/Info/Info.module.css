@@ -18,3 +18,10 @@
 .infoDetails > p {
   font-size: .9rem;
 }
+
+@media (min-width: 800px) {
+  .infoContainer {
+    padding: 0;
+    max-width: 420px;
+  }
+}
