@@ -23,5 +23,6 @@
   .infoContainer {
     padding: 0;
     max-width: 420px;
+    margin: 0 auto;
   }
 }

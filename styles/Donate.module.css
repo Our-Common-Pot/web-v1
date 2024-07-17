@@ -306,3 +306,122 @@
 .popoutInfo  a {
   color: var(--primary-lighter);
 }
+
+@media (min-width: 800px) {
+  .secondLayout {
+    padding: 3em 0 6em;
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .donateIntroImage {
+    width: 45%;
+    max-width: 750px;
+  }
+  .donateIntro {
+    width: 50%;
+    max-width: 715px;
+    padding: 0;
+    text-align: left;
+  }
+  .donateBanksContainer {
+    padding: 0%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .donateBank {
+    width: 47%;
+  }
+  .popoutContainer {
+    transform: translate(-50%, -22%);
+    text-align: center;
+  }
+
+  .thirdLayout {
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 0 6em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .impactIntro {
+    padding: 0;
+    width: 45%;
+    max-width: 740px;
+  }
+  .impactImage {
+    width: 50%;
+  }
+
+  .fourthLayout {
+    padding: 2em 0 6em;
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .testimonialVideoContainer {
+    width: 65%;
+    max-width: 1000px;
+    border-radius: 24px;
+  } .testimonialVideoContainer a img {
+    border-radius: 24px;
+  }
+  .founderIntro {
+    width: 30%;
+    padding: 0;
+  }
+
+  .fifthLayout {
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto 7em;
+    padding: 5em 4em;
+  }
+  .blurredFix {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  .inviteContainer {
+    width: 80%;
+    max-width: 640px; 
+    text-align: left;
+    margin: 0;
+    margin-left: 3vw;
+  }
+  .inviteContainer > h2 {
+    font-size: 1.7rem;
+    margin-bottom: 0.1em;
+  }
+  .donateButton1, .donateButton2 {
+    font-weight: 600;
+  }
+
+  .lastLayout {
+    padding: 0 0 4em;
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+  .lastLayout > h2 {
+    margin-bottom: 3em;
+  }
+  .donationInfoContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 3em;
+  }
+}
+
+/* @media (min-width: 800px) and (max-width: 1100px) {
+  .inviteContainer {
+    margin-left: 0;
+  }
+} */
