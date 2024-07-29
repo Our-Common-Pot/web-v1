@@ -81,7 +81,7 @@ const Donate = () => {
           </div>
 
           <div className={sharedStyles.heroImage} aria-hidden="true">
-            <Image src={donateVolunteersImage} alt="An image of volunteers collaborating together in harmony"/>
+            <Image src={donateVolunteersImage} alt="An image of volunteers collaborating together in harmony" priority/>
           </div>
         </section>
 

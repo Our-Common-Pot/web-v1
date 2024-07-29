@@ -67,7 +67,7 @@ const About = () => {
           </div>
 
           <div className={sharedStyles.heroImage} aria-hidden="true">
-            <Image src={aboutMobileHeroImage} alt="An image of volunteers collaborating together in harmony"/>
+            <Image src={aboutMobileHeroImage} alt="An image of volunteers collaborating together in harmony" priority/>
           </div>
         </section>
 
