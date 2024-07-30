@@ -1,5 +1,5 @@
 import Image from "next/image";
-import avatarImage from "../../public/images/avatar_3d.svg";
+import avatarImage from "../../public/images/avatar_3d.png";
 import styles from "./TestimonialSmall.module.css";
 
 const defaultTestimonialDetails = {
