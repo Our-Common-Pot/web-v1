@@ -1,19 +1,19 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
-import mobileHeroImage from "../public/images/mobile_home_hero_image.svg";
+import mobileHeroImage from "../public/images/mobile_home_hero_image.png";
 import transistorLogo from "../public/images/transistor_logo.svg";
 import reformLogo from "../public/images/reform_logo.svg";
 import tupleLogo from "../public/images/tuple_logo.svg";
 import statamicLogo from "../public/images/statamic_logo.svg";
 import savvycalLogo from "../public/images/savvycal_logo.svg";
-import collaborationImage from "../public/images/mobile_home_collaborate_image.svg";
-import hand3dImage from "../public/images/hands_up_3d.svg";
-import vouchersImage from "../public/images/vouchers_3d.svg";
-import mealCalcImage from "../public/images/food_calculation_3d.svg";
-import shakeImage from "../public/images/handshake_3d.svg";
+import collaborationImage from "../public/images/mobile_home_collaborate_image.png";
+import hand3dImage from "../public/images/hands_up_3d.png";
+import vouchersImage from "../public/images/vouchers_3d.png";
+import mealCalcImage from "../public/images/food_calculation_3d.png";
+import shakeImage from "../public/images/handshake_3d.png";
 import infographicsImage from "../public/images/benefits_infographic_mobile.svg";
-import testimonialVideoImage from "../public/images/testimonial_video.jpg";
+import testimonialVideoImage from "../public/images/testimonial_video.png";
 import BlogCutout from "@/components/BlogCutout";
 import TestimonialSmall from "@/components/TestimonialSmall";
 import CtaButton from "@/components/CtaButton";
@@ -178,10 +178,10 @@ export default function Home() {
 
         <section className={styles.fourthLayout}>
           <article className={styles.bigScreenArticle}>
-            <h2>We have raised over $700 and served more than 8,000 meals</h2>
+            <h2>We have raised over &#8358;300,000 and served more than 10 meals</h2>
             <p>
-              Thanks to your generous support, we&apos;ve raised over $700 and provided
-              more than 8,000 meals to students in need. Together, we&apos;re making a tangible
+              Thanks to your generous support, we&apos;ve raised over &#8358;300,000 and provided
+              more than 10 meals to students in need. Together, we&apos;re making a tangible
               difference in combating food insecurity and nourishing the success of our community. <br />
               Your contributions are transforming lives and creating brighter futures. 
               Thank you for being a part of our missionWe look forward to receiving your generous

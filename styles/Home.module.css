@@ -64,12 +64,13 @@
 
 .mobileHeroImage {
   width: 95%;
-  margin: 0 auto;
+  margin: 3em auto;
 }
 
 .mobileHeroImage img {
   width: 100%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
 }
 
 .sponsorContainer {
@@ -150,6 +151,9 @@
   justify-content: center;
 }
 .collaborationImage img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 12px;
 }
 
@@ -188,7 +192,14 @@
   font-weight: 600;
 }
 
+.infoImage {
+  width: 50%;
+  margin: 0 auto;
+}
 .infoImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   margin: 0 auto;
 }
 
@@ -335,8 +346,9 @@
 }
 
 .testimonialVideoContainer a img {
-  object-fit: contain;
   margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }
 
 .lastLayout {
@@ -452,6 +464,9 @@
   .infoContainer {
     width: 20%;
     margin: 0;
+  }
+  .infoImage {
+    width: 60%;
   }
 
   .fourthLayout {

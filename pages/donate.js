@@ -12,7 +12,7 @@ import bankLogo from "../public/images/donate_bank.svg";
 import flutterwaveLogo from "../public/images/donate_flutterwave.svg";
 import donateMidImage from "../public/images/about_end.png";
 import Info from "@/components/Info";
-import testimonialVideoImage from "../public/images/testimonial_video.jpg";
+import testimonialVideoImage from "../public/images/testimonial_video.png";
 import { donationsInfos, accountDetails } from "@/utils/data";
 import { useRouter } from "next/router";
 import { useState } from "react";

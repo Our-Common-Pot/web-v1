@@ -137,28 +137,28 @@ const About = () => {
             <div className={styles.metric}>
               <span></span>
               <div className={styles.metricDetails}>
-                <p>5000+</p>
+                <p>500+</p>
                 <p>Students benefited</p>
               </div>
             </div>
             <div className={styles.metric}>
               <span></span>
               <div className={styles.metricDetails}>
-                <p>319+</p>
+                <p>10+</p>
                 <p>Volunteers</p>
               </div>
             </div>
             <div className={styles.metric}>
               <span></span>
               <div className={styles.metricDetails}>
-                <p>75+</p>
+                <p>6+</p>
                 <p>Campus Partners</p>
               </div>
             </div>
             <div className={styles.metric}>
               <span></span>
               <div className={styles.metricDetails}>
-                <p>8000+</p>
+                <p>10+</p>
                 <p>Meals Served</p>
               </div>
             </div>

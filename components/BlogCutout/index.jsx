@@ -1,6 +1,6 @@
 import Image from "next/image";
 import articleImage from "../../public/images/article_image_1.png";
-import avatarImage from "../../public/images/avatar_3d.svg";
+import avatarImage from "../../public/images/avatar_3d.png";
 import styles from "./BlogCutout.module.css";
 
 const BlogCutout = () => {
